@@ -41,8 +41,8 @@ export function App() {
 
         <view class="flex flex-col items-center justify-center">
           <image src={arrow} class="w-[24px] h-[24px]" />
-          <text class="text-[20px] text-white-85 m-[15px]">Tap the logo and have fun!</text>
-          <text class="text-[12px] text-white-65 m-[5px]">
+          <text class="text-[20px] text-white-8 m-[15px]">Tap the logo and have fun!</text>
+          <text class="text-[12px] text-white-6 m-[5px]">
             Edit
             <text class="italic">{" src/App.tsx "}</text>
             to see updates!

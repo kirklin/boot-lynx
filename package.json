@@ -25,6 +25,7 @@
     "preview": "rspeedy preview"
   },
   "dependencies": {
+    "@kirklin/palette": "^0.2.1",
     "@lynx-js/react": "^0.105.1"
   },
   "devDependencies": {

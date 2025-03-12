@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@kirklin/palette':
+        specifier: ^0.2.1
+        version: 0.2.1
       '@lynx-js/react':
         specifier: ^0.105.1
         version: 0.105.1(@lynx-js/types@3.2.0)(@types/react@18.3.18)
@@ -424,6 +427,10 @@ packages:
         optional: true
       svelte-eslint-parser:
         optional: true
+
+  '@kirklin/palette@0.2.1':
+    resolution: {integrity: sha512-B+b0wzU5aqYv+l7nYve99UlzHSQHWaa8WXeSQYZ54l56qfIpAReKpRjAPmbGG9DTxiow9Efd00MsvwYRCot1sA==}
+    engines: {node: '>=16'}
 
   '@lynx-js/chunk-loading-webpack-plugin@0.1.7':
     resolution: {integrity: sha512-wWz+Zk5bYUL6qZAoSCddJmhnXYlIhVQ1EgJDj6s5jWFsf7/1JWHN7/Ox7BHJK1K6V9nnt7itU0AozQprMw7JpQ==}
@@ -4189,6 +4196,10 @@ snapshots:
       - supports-color
       - typescript
       - vitest
+
+  '@kirklin/palette@0.2.1':
+    dependencies:
+      colord: 2.9.3
 
   '@lynx-js/chunk-loading-webpack-plugin@0.1.7(@rspack/core@1.2.7(@swc/helpers@0.5.15))':
     dependencies:
