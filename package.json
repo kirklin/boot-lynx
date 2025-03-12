@@ -35,8 +35,10 @@
     "@lynx-js/rspeedy": "^0.8.3",
     "@lynx-js/types": "^3.2.0",
     "@types/react": "^18.3.18",
+    "@unocss/webpack": "66.1.0-beta.3",
     "eslint": "^9.20.0",
     "eslint-plugin-format": "^1.0.1",
-    "typescript": "~5.7.3"
+    "typescript": "~5.7.3",
+    "unocss": "66.1.0-beta.3"
   }
 }

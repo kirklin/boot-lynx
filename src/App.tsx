@@ -3,7 +3,6 @@ import { useCallback, useEffect, useState } from "@lynx-js/react";
 import arrow from "./assets/arrow.png";
 import lynxLogo from "./assets/lynx-logo.png";
 import reactLynxLogo from "./assets/react-logo.png";
-import "./App.css";
 
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false);
@@ -19,29 +18,37 @@ export function App() {
 
   return (
     <view>
-      <view className="Background" />
-      <view className="App">
-        <view className="Banner">
-          <view className="Logo" bindtap={onTap}>
+      <view class="fixed w-[200vw] h-[200vw] top-[-60vw] left-[-14.27vw] rounded-full rotate-[15.25deg] shadow-[0_12.93px_28.74px_0_#ffd28db2_inset] bg-gradient-radial from-transparent via-[rgba(239,155,255,0.3)] to-[#ff6448]" />
+
+      <view class="relative min-h-screen flex flex-col items-center justify-center">
+        <view class="flex-[5] flex flex-col items-center justify-center z-[100]">
+          <view class="flex flex-col items-center justify-center mb-2" bindtap={onTap}>
             {alterLogo ? (
-              <image src={reactLynxLogo} className="Logo--react" />
+              <image
+                src={reactLynxLogo}
+                class="w-[100px] h-[100px] animate-[spin_20s_linear_infinite]"
+              />
             ) : (
-              <image src={lynxLogo} className="Logo--lynx" />
+              <image
+                src={lynxLogo}
+                class="w-[100px] h-[100px] animate-shake"
+              />
             )}
           </view>
-          <text className="Title">React</text>
-          <text className="Subtitle">on Lynx</text>
+          <text class="text-white text-[36px] font-bold">React</text>
+          <text class="text-white text-[22px] font-semibold italic mb-2">on Lynx</text>
         </view>
-        <view className="Content">
-          <image src={arrow} className="Arrow" />
-          <text className="Description">Tap the logo and have fun!</text>
-          <text className="Hint">
+
+        <view class="flex flex-col items-center justify-center">
+          <image src={arrow} class="w-[24px] h-[24px]" />
+          <text class="text-[20px] text-white-85 m-[15px]">Tap the logo and have fun!</text>
+          <text class="text-[12px] text-white-65 m-[5px]">
             Edit
-            <text style={{ fontStyle: "italic" }}>{" src/App.tsx "}</text>
+            <text class="italic">{" src/App.tsx "}</text>
             to see updates!
           </text>
         </view>
-        <view style={{ flex: 1 }}></view>
+        <view class="flex-1"></view>
       </view>
     </view>
   );
