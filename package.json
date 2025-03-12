@@ -1,7 +1,8 @@
 {
   "name": "boot-lynx",
-  "version": "1.0.0",
   "type": "module",
+  "version": "1.0.0",
+  "private": true,
   "packageManager": "pnpm@10.2.1",
   "description": "_description_",
   "author": "Kirk Lin <https://github.com/kirklin>",
@@ -13,7 +14,12 @@
     "url": "git+https://github.com/kirklin/boot-lyxn.git"
   },
   "bugs": "https://github.com/kirklin/boot-lyxn/issues",
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
     "build": "rspeedy build",
     "dev": "rspeedy dev",
     "format": "prettier --write .",
@@ -23,16 +29,14 @@
     "@lynx-js/react": "^0.105.1"
   },
   "devDependencies": {
+    "@kirklin/eslint-config": "^3.0.0",
     "@lynx-js/qrcode-rsbuild-plugin": "^0.3.4",
     "@lynx-js/react-rsbuild-plugin": "^0.9.1",
     "@lynx-js/rspeedy": "^0.8.3",
     "@lynx-js/types": "^3.2.0",
     "@types/react": "^18.3.18",
-    "prettier": "^3.5.2",
+    "eslint": "^9.20.0",
+    "eslint-plugin-format": "^1.0.1",
     "typescript": "~5.7.3"
-  },
-  "engines": {
-    "node": ">=18"
-  },
-  "private": true
+  }
 }

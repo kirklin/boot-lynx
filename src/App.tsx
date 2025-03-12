@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from "@lynx-js/react";
 
-import "./App.css";
 import arrow from "./assets/arrow.png";
 import lynxLogo from "./assets/lynx-logo.png";
 import reactLynxLogo from "./assets/react-logo.png";
+import "./App.css";
 
 export function App() {
   const [alterLogo, setAlterLogo] = useState(false);
@@ -36,7 +36,8 @@ export function App() {
           <image src={arrow} className="Arrow" />
           <text className="Description">Tap the logo and have fun!</text>
           <text className="Hint">
-            Edit<text style={{ fontStyle: "italic" }}>{" src/App.tsx "}</text>
+            Edit
+            <text style={{ fontStyle: "italic" }}>{" src/App.tsx "}</text>
             to see updates!
           </text>
         </view>
