@@ -22,7 +22,6 @@
     "lint:fix": "eslint . --fix",
     "build": "rspeedy build",
     "dev": "rspeedy dev",
-    "format": "prettier --write .",
     "preview": "rspeedy preview"
   },
   "dependencies": {
